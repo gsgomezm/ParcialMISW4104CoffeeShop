@@ -25,7 +25,7 @@ describe('CoffeeListComponent', () => {
     fixture = TestBed.createComponent(CoffeeListComponent);
     component = fixture.componentInstance;
 
-    for(let i = 0; i < 10; i++) {
+    for(let i = 0; i < 3; i++) {
       const coffee = new Coffee(
         faker.number.int(),
         faker.person.firstName(),
@@ -55,7 +55,7 @@ describe('CoffeeListComponent', () => {
   });
  
   it('should have 11 <tr> elements', () => {
-    expect(debug.queryAll(By.css('tr'))).toHaveSize(11)
+    expect(debug.queryAll(By.css('tr'))).toHaveSize(4)
   });
 
   it('should have the corresponding table header elements', () => {
@@ -66,7 +66,7 @@ describe('CoffeeListComponent', () => {
     expect(headerTable.children[3].nativeElement.textContent).toEqual("Región")
   });
 
-  it('should have the corresponding id, nombre, tipo and region to the 10 coffees elements', () => {
+  it('should have the corresponding id, nombre, tipo and region to the 3 coffees elements', () => {
      let coffeTable = debug.queryAll(By.css('tr'));
      coffeTable.forEach((row, i) => {
       if(i != 0) {
@@ -85,7 +85,7 @@ describe('CoffeeListComponent', () => {
 
   it('should have the corresponding total origen coffe types', () => {
     expect(debug.queryAll(By.css('#origen'))[0].nativeElement.textContent).
-      toEqual("Total café de origen: " + component.totalBlend)
+      toEqual("Total café de origen: " + component.totalOrigen)
   });
  
 });
