@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SpinnerModule } from './shared/spinner/spinner.module';
+import { CoffeeModule } from './coffee/coffee.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SpinnerModule } from './shared/spinner/spinner.module';
     BrowserModule,
     AppRoutingModule,
     SpinnerModule,
+    CoffeeModule,
     HttpClientModule
   ],
   providers: [],
