@@ -1,0 +1,15 @@
+p {
+    font-weight: 600;
+}
+.main-container {
+    margin-top: 2vh;
+}
+.title {
+    font-family: cursive;
+}
+.divider {
+    width: 96%;
+}
+.caption {
+    line-height: 0;
+}
