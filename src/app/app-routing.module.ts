@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CoffeeComponent } from './coffee/coffee.component';
+import { CoffeeListComponent } from './coffee/coffee-list/coffee-list.component';
 
 
 
 const routes: Routes =  [
-  { path: '', component: CoffeeComponent},
+  { path: '', component: CoffeeListComponent},
  ];
 
 @NgModule({
