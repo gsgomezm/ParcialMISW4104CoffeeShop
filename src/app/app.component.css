@@ -1,0 +1,28 @@
+* [lang^=en] {
+  color: green;
+
+}
+*{  font-family: 'Montserrat';}
+.navbar{
+  background-color: #070322!important;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+#nombre{
+  height: 35px;
+}
+#logo{
+  height: 38px;
+  margin-left: 20%;
+
+}
+#homeimg{
+  display: block;
+  margin: 0 auto; 
+            width: 20vw;
+            margin-top: 2%;
+}
+#hometitle{
+  text-align: center;
+  color: #DAD2D8;
+  margin-top: 1%;
+  }
